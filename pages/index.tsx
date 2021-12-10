@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   const MintMany = () => {
-    const [mintCount, setMintCount] = useState(5);
+    const [mintCount, setMintCount] = useState(1);
 
     return (
       <>
@@ -51,13 +51,13 @@ export default function Home() {
         <input
           disabled={isMinting}
           type="number"
-          min={2}
-          max={10}
+          min={1}
+          max={2}
           className="px-2 mx-auto mt-5 font-bold text-white bg-gray-500"
           value={mintCount}
           onChange={(e) => setMintCount((e.target as any).value)}
         />
-        <p className="mx-auto mt-2">min 2; max 10;</p>
+        <p className="mx-auto mt-2">max 2 you can mint</p>
       </>
     );
   };
@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>next-candy-machine</title>
+        <title>Mint Your RobotS</title>
         <meta
           name="description"
           content="Simplified NextJs with typescript example app integrated with Metaplex's Candy Machine"
@@ -76,11 +76,11 @@ export default function Home() {
       <div className="flex flex-col items-center min-h-screen mx-6">
         <Toaster />
         <div className="flex items-center justify-between w-full mt-3">
-          <h1 className="text-2xl font-bold">next-candy-machine</h1>
+          <h1 className="text-2xl font-bold">Mint your RobotS</h1>
           <div className="flex items-center">
             {connected && (
               <div className="flex items-end mr-2">
-                <p className="text-xs text-gray-400">balance</p>
+                <p className="text-xs text-gray-400">Your Balance</p>
                 <p className="mx-1 font-bold leading-none">
                   {balance.toFixed(2)}
                 </p>
@@ -113,18 +113,9 @@ export default function Home() {
                     <p>SOLD OUT</p>
                   ) : (
                     <>
+                      
                       <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint One</h1>
-                        <button
-                          onClick={startMint}
-                          disabled={isMinting}
-                          className="px-4 py-2 mx-auto font-bold text-white transition-opacity rounded-lg hover:opacity-70 bg-gradient-to-br from-green-300 via-blue-500 to-purple-600"
-                        >
-                          {isMinting ? "loading" : "mint 1"}
-                        </button>
-                      </div>
-                      <div className="flex flex-col w-1/2">
-                        <h1 className="mb-10 text-3xl font-bold">Mint Many</h1>
+                        <h1 className="mb-10 text-3xl font-bold center-text">RobotS Mint</h1>
                         <MintMany />
                       </div>
                     </>
