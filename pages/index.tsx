@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Mint Your RobotS</title>
+        <title>Mint Your RobotS Now!</title>
         <meta
           name="description"
           content="Simplified NextJs with typescript example app integrated with Metaplex's Candy Machine"
