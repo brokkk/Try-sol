@@ -165,12 +165,19 @@ export default function Home() {
 
             </div>
           </div>
+          <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+            <Image
+              className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
+              src="/pattern.png"
+              alt="..."
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
+            />
+          </div>
         </div>
-        <Image
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-          src="https://demos.creative-tim.com/notus-nextjs/img/pattern_nextjs.png"
-          alt="..."
-        />
+
       </section>
 
       <main>
@@ -183,7 +190,11 @@ export default function Home() {
                 <Image
                   alt="ok"
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="/room.jpg"
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="contain"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -195,7 +206,7 @@ export default function Home() {
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                     The extension comes with three pre-built pages to help you
                     get started faster. You can change the text and images and
-                    you&apos;re good to go.
+                    you&apos;re good to gooo.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
